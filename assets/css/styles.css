@@ -444,6 +444,10 @@ footer {
 
 @media (max-width: 770px) {
 
+    body {
+        overflow: hidden;
+    }
+
     .sobre-section,
     .content-contato {
         flex-direction: column;
@@ -468,6 +472,10 @@ footer {
 }
 
 @media (max-width: 480px) {
+
+    body {
+        overflow: hidden;
+    }
 
     .nav-list {
         width: 100vw;
