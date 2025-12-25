@@ -1,14 +1,6 @@
-const form = document.querySelector(".form-fale-conosco");
-const mascara = document.querySelector(".mascara-formulario");
+const hamburguer = document.querySelector(".hamburguer");
+const nav = document.querySelector(".nav-list");
 
-function mostrarForm() {
-    form.style.left = "50%";
-    form.style.transform = "translateX(-50%)";
-    mascara.style.visibility = "visible";
-}
-
-function esconderForm() {
-    form.style.left = "-300px";
-    form.style.transform = "translateX(0)";
-    mascara.style.visibility = "hidden";
-}
+hamburguer.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
