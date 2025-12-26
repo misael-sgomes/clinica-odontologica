@@ -385,6 +385,7 @@ footer {
     bottom: 20px;
     right: 10px;
     max-width: 60px;
+    z-index: 1;
 }
 
 .button-wpp img {
@@ -415,8 +416,20 @@ footer {
         z-index: 1;
     }
 
+    .text-background {
+        width: 75%;
+    }
+
+    .text-background h1 {
+        font-size: 2.9rem;
+    }
+
     .hamburguer {
         display: flex;
+    }
+
+    .button-wpp {
+        z-index: 1;
     }
 
     .nav-list {
@@ -427,8 +440,8 @@ footer {
         height: 100vh;
         background: rgba(228, 221, 221, 0.589);
         flex-direction: column;
-        align-items: center;        
-        padding: 10px;        
+        align-items: center;
+        padding: 10px;
         gap: 50px;
         transform: translateX(100%);
         transition: .4s ease-in-out;
@@ -461,12 +474,36 @@ footer {
         overflow-x: hidden;
     }
 
+    .text-background {
+        width: 74%;
+    }
+
+    .text-background h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-background p {
+        font-size: .9rem;
+    }
+
+    .btn-inicio {
+        text-align: center;
+    }
+
     .sobre-section,
     .content-contato {
         flex-direction: column;
         align-items: center;
         text-align: center;
         gap: 2rem;
+    }
+
+    .image-sobre, .text-sobre {
+        width: 100%;
+    }
+
+    .button-insta {
+        justify-content: center;
     }
 
     .menu-link {
@@ -487,30 +524,129 @@ footer {
         gap: 2rem;
         text-align: center;
     }
+
+    .tratamento-section {
+        text-align: center;
+    }
+
+    .content-contato {
+        padding: 24px;
+    }
+
+    .content-form {
+        width: 100%;
+        text-align: start;
+    }
+
+    .text-contato p {
+        font-size: 1rem;
+    }
+
+    .button-form {
+        width: 100%;
+        font-size: .9rem;
+    }
+
+    .footer-social {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 0;
+    }
 }
 
 @media (max-width: 480px) {
 
-    body {
-        overflow-x: hidden;
-    }
-
-    .nav-list {
+    header {
+        position: fixed;
         width: 100vw;
         max-width: 100%;
     }
 
-    .menu-link {
-        font-size: 1.5rem;
-        font-weight: 700;
+    .hamburguer span {
+        height: 2px;
     }
 
-    .text-contato h2 {
+    .tittle-header {
+        font-size: .9rem;
+    }
+
+    .text-background {
+        width: 77%;
+    }
+
+    .text-background h1 {
         font-size: 1.5rem;
     }
 
-    .hamburguer {
-        width: 26px;
-        height: 20px;
+    .text-background p {
+        font-size: .9rem;
+    }
+
+    .btn-inicio {
+        width: 77%;
+        font-size: .8rem;
+    }
+
+    .image-sobre {
+        width: 100%;
+    }
+
+    .text-sobre {
+        width: 100%;
+    }
+
+    .button-insta {
+        justify-content: center;
+    }
+
+    .tratamento-section h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .btn-tratamentos {
+        text-align: center;
+    }
+
+    .content-contato {
+        padding: 24px;
+    }
+
+    .content-form {
+        width: 100%;
+        text-align: start;
+    }
+
+    .text-contato p {
+        font-size: 1rem;
+    }
+
+    .button-form {
+        width: 100%;
+        font-size: .9rem;
+    }
+
+    footer {
+        padding: 24px;
+    }
+
+    .text-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .footer-social {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        font-size: .8rem;
+        padding: 0;
     }
 }
