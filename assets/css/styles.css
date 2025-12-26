@@ -565,6 +565,15 @@ footer {
         max-width: 100%;
     }
 
+    .nav-list a {
+        font-size: .8rem;
+    }
+
+    .btn-header {
+        padding: 10px;
+        text-align: center;
+    }
+
     .hamburguer span {
         height: 2px;
     }
